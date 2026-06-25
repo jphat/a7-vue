@@ -1,0 +1,9 @@
+[install]
+linker = "isolated"
+# minimumReleaseAge = 259200 # 3 days
+
+# Packages that bypass the gate
+minimumReleaseAgeExcludes = []
+
+[test]
+preload = ["./tests/bun-test-setup.ts", "./tests/bun-global-mocks.ts"]
